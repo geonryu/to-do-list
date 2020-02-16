@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>widget</title>
+    <script src="https://kit.fontawesome.com/fbf7136abe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/welcome.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/todoedit.js"></script>
+    <script src="js/tododel.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="clock">
+        <span class="day">AM</span>
+        <span class="hr">00</span>
+        <span class="blink">:</span>
+        <span class="min">00</span>
+    </div>
+    <form class="name">
+        <input type="text" placeholder="What's your name?">
+    </form>
+    
+    <h2></h2>
+
+    <div class="checklist">
+        <h3>
+            What are you going to do?   
+        </h3>
+        <ul class="ico">
+            <li class="learn"><i class="far fa-question-circle info" title="Learn More"></i>
+                <div class="more-in option">
+                    <i class="far fa-minus-square close"></i>
+                    <p>Do you want to know how to use more?</p>
+                    <i class="fas fa-arrow-circle-down arr"></i>
+                    <strong>Learn More</strong>
+                    <span></span>
+                </div>
+            </li>
+            <li class="filter"><i class="fas fa-filter " title="Filter"></i>
+                <div class="fil-in option">
+                    <i class="far fa-minus-square close"></i>
+                    <p>View ALL</p><br>
+                    <p>View To Do</p><br>
+                    <p>View Important</p>
+                    <p>View Done</p>
+                    <span></span>
+                </div>
+            </li>
+            <li class="setting"><i class="fas fa-sliders-h " title="Set Color"></i>
+                <div class="set-in option">
+                    <i class="far fa-minus-square close"></i>
+                    <div class="color">
+                        <p>Text Color</p>
+                        <ul class="txt-col">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>Important</p>
+                        <ul class="imp-col">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>Done</p>
+                        <ul class="done-col">
+                            <li class="on"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <span></span>
+                </div>
+            </li>
+        </ul>
+        <div class="input">
+            <i class="far fa-keyboard keyboard"></i>
+            <form class="question">
+                <input type="text">
+            </form>
+        </div>
+        <div class="inner">
+            <!--To Do List-->
+        </div>
+        <div class="del">
+            <i class="far fa-trash-alt"></i>
+        </div>
+    </div><!--checklist-->
+
+
+</div>
+
+    
+</body>
+</html>
